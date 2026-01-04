@@ -1,7 +1,7 @@
 name: scailo_sdk
 description: "Dart SDK for accessing Scailo API"
 version: 0.0.1
-homepage:
+homepage: https://github.com/scailo/dart-sdk
 
 environment:
   sdk: ^3.9.0
