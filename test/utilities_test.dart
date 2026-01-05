@@ -151,7 +151,7 @@ void main() {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Currencies', () async {
+  test('Retrieve all the Currencies', () async {
     var serviceClient = getScailoClientForCurrenciesService();
     var resp = await serviceClient.filter(
       CurrenciesServiceFilterReq(
@@ -162,7 +162,7 @@ test('Retrieve all the Currencies', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Leaves Requests', () async {
+  test('Retrieve all the Leaves Requests', () async {
     var serviceClient = getScailoClientForLeavesRequestsService();
     var resp = await serviceClient.filter(
       LeavesRequestsServiceFilterReq(
@@ -173,7 +173,7 @@ test('Retrieve all the Leaves Requests', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Attendances Amendments', () async {
+  test('Retrieve all the Attendances Amendments', () async {
     var serviceClient = getScailoClientForAttendancesAmendmentsService();
     var resp = await serviceClient.filter(
       AttendancesAmendmentsServiceFilterReq(
@@ -184,7 +184,7 @@ test('Retrieve all the Attendances Amendments', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Equations Replaceables', () async {
+  test('Retrieve all the Equations Replaceables', () async {
     var serviceClient = getScailoClientForEquationsReplaceablesService();
     var resp = await serviceClient.filter(
       EquationsReplaceablesServiceFilterReq(
@@ -195,7 +195,7 @@ test('Retrieve all the Equations Replaceables', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Debit Notes', () async {
+  test('Retrieve all the Debit Notes', () async {
     var serviceClient = getScailoClientForDebitNotesService();
     var resp = await serviceClient.filter(
       DebitNotesServiceFilterReq(
@@ -206,7 +206,7 @@ test('Retrieve all the Debit Notes', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Purchases Orders', () async {
+  test('Retrieve all the Purchases Orders', () async {
     var serviceClient = getScailoClientForPurchasesOrdersService();
     var resp = await serviceClient.filter(
       PurchasesOrdersServiceFilterReq(
@@ -217,7 +217,7 @@ test('Retrieve all the Purchases Orders', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Holidays', () async {
+  test('Retrieve all the Holidays', () async {
     var serviceClient = getScailoClientForHolidaysService();
     var resp = await serviceClient.filter(
       HolidaysServiceFilterReq(
@@ -228,7 +228,7 @@ test('Retrieve all the Holidays', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the On Duties', () async {
+  test('Retrieve all the On Duties', () async {
     var serviceClient = getScailoClientForOnDutiesService();
     var resp = await serviceClient.filter(
       OnDutiesServiceFilterReq(
@@ -239,7 +239,7 @@ test('Retrieve all the On Duties', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Equipments', () async {
+  test('Retrieve all the Equipments', () async {
     var serviceClient = getScailoClientForEquipmentsService();
     var resp = await serviceClient.filter(
       EquipmentsServiceFilterReq(
@@ -250,7 +250,7 @@ test('Retrieve all the Equipments', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Qc Samples', () async {
+  test('Retrieve all the Qc Samples', () async {
     var serviceClient = getScailoClientForQCSamplesService();
     var resp = await serviceClient.filter(
       QCSamplesServiceFilterReq(
@@ -261,7 +261,7 @@ test('Retrieve all the Qc Samples', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Teams', () async {
+  test('Retrieve all the Teams', () async {
     var serviceClient = getScailoClientForTeamsService();
     var resp = await serviceClient.filter(
       TeamsServiceFilterReq(
@@ -272,7 +272,7 @@ test('Retrieve all the Teams', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Tax Groups', () async {
+  test('Retrieve all the Tax Groups', () async {
     var serviceClient = getScailoClientForTaxGroupsService();
     var resp = await serviceClient.filter(
       TaxGroupsServiceFilterReq(
@@ -283,7 +283,7 @@ test('Retrieve all the Tax Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Purchases Indents', () async {
+  test('Retrieve all the Purchases Indents', () async {
     var serviceClient = getScailoClientForPurchasesIndentsService();
     var resp = await serviceClient.filter(
       PurchasesIndentsServiceFilterReq(
@@ -294,7 +294,7 @@ test('Retrieve all the Purchases Indents', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Vendor Streams', () async {
+  test('Retrieve all the Vendor Streams', () async {
     var serviceClient = getScailoClientForVendorStreamsService();
     var resp = await serviceClient.filter(
       VendorStreamsServiceFilterReq(
@@ -305,7 +305,7 @@ test('Retrieve all the Vendor Streams', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Locations', () async {
+  test('Retrieve all the Locations', () async {
     var serviceClient = getScailoClientForLocationsService();
     var resp = await serviceClient.filter(
       LocationsServiceFilterReq(
@@ -316,7 +316,7 @@ test('Retrieve all the Locations', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Inward Jobs', () async {
+  test('Retrieve all the Inward Jobs', () async {
     var serviceClient = getScailoClientForInwardJobsService();
     var resp = await serviceClient.filter(
       InwardJobsServiceFilterReq(
@@ -327,7 +327,7 @@ test('Retrieve all the Inward Jobs', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Actions Codes', () async {
+  test('Retrieve all the Actions Codes', () async {
     var serviceClient = getScailoClientForActionsCodesService();
     var resp = await serviceClient.filter(
       ActionsCodesServiceFilterReq(
@@ -338,7 +338,7 @@ test('Retrieve all the Actions Codes', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Activities', () async {
+  test('Retrieve all the Activities', () async {
     var serviceClient = getScailoClientForActivitiesService();
     var resp = await serviceClient.filter(
       ActivitiesServiceFilterReq(
@@ -349,7 +349,7 @@ test('Retrieve all the Activities', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Stock Returns', () async {
+  test('Retrieve all the Stock Returns', () async {
     var serviceClient = getScailoClientForStockReturnsService();
     var resp = await serviceClient.filter(
       StockReturnsServiceFilterReq(
@@ -360,7 +360,7 @@ test('Retrieve all the Stock Returns', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Qc Params', () async {
+  test('Retrieve all the Qc Params', () async {
     var serviceClient = getScailoClientForQCParamsService();
     var resp = await serviceClient.filter(
       QCParamsServiceFilterReq(
@@ -371,7 +371,7 @@ test('Retrieve all the Qc Params', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Activities Groups', () async {
+  test('Retrieve all the Activities Groups', () async {
     var serviceClient = getScailoClientForActivitiesGroupsService();
     var resp = await serviceClient.filter(
       ActivitiesGroupsServiceFilterReq(
@@ -382,7 +382,7 @@ test('Retrieve all the Activities Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Production Indents', () async {
+  test('Retrieve all the Production Indents', () async {
     var serviceClient = getScailoClientForProductionIndentsService();
     var resp = await serviceClient.filter(
       ProductionIndentsServiceFilterReq(
@@ -393,7 +393,7 @@ test('Retrieve all the Production Indents', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Ledgers', () async {
+  test('Retrieve all the Ledgers', () async {
     var serviceClient = getScailoClientForLedgersService();
     var resp = await serviceClient.filter(
       LedgersServiceFilterReq(
@@ -404,7 +404,7 @@ test('Retrieve all the Ledgers', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Stock Audits', () async {
+  test('Retrieve all the Stock Audits', () async {
     var serviceClient = getScailoClientForStockAuditsService();
     var resp = await serviceClient.filter(
       StockAuditsServiceFilterReq(
@@ -415,7 +415,7 @@ test('Retrieve all the Stock Audits', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Overtimes', () async {
+  test('Retrieve all the Overtimes', () async {
     var serviceClient = getScailoClientForOvertimesService();
     var resp = await serviceClient.filter(
       OvertimesServiceFilterReq(
@@ -426,7 +426,7 @@ test('Retrieve all the Overtimes', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Clients', () async {
+  test('Retrieve all the Clients', () async {
     var serviceClient = getScailoClientForClientsService();
     var resp = await serviceClient.filter(
       ClientsServiceFilterReq(
@@ -437,7 +437,7 @@ test('Retrieve all the Clients', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Stock Issuances', () async {
+  test('Retrieve all the Stock Issuances', () async {
     var serviceClient = getScailoClientForStockIssuancesService();
     var resp = await serviceClient.filter(
       StockIssuancesServiceFilterReq(
@@ -448,7 +448,7 @@ test('Retrieve all the Stock Issuances', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Associates', () async {
+  test('Retrieve all the Associates', () async {
     var serviceClient = getScailoClientForAssociatesService();
     var resp = await serviceClient.filter(
       AssociatesServiceFilterReq(
@@ -459,7 +459,7 @@ test('Retrieve all the Associates', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Client Streams', () async {
+  test('Retrieve all the Client Streams', () async {
     var serviceClient = getScailoClientForClientStreamsService();
     var resp = await serviceClient.filter(
       ClientStreamsServiceFilterReq(
@@ -470,7 +470,7 @@ test('Retrieve all the Client Streams', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Activities Statuses', () async {
+  test('Retrieve all the Activities Statuses', () async {
     var serviceClient = getScailoClientForActivitiesStatusesService();
     var resp = await serviceClient.filter(
       ActivitiesStatusesServiceFilterReq(
@@ -481,7 +481,7 @@ test('Retrieve all the Activities Statuses', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Workflows Rules', () async {
+  test('Retrieve all the Workflows Rules', () async {
     var serviceClient = getScailoClientForWorkflowsRulesService();
     var resp = await serviceClient.filter(
       WorkflowsRulesServiceFilterReq(
@@ -492,7 +492,7 @@ test('Retrieve all the Workflows Rules', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Equations Sales Bundles', () async {
+  test('Retrieve all the Equations Sales Bundles', () async {
     var serviceClient = getScailoClientForEquationsSalesBundlesService();
     var resp = await serviceClient.filter(
       EquationsSalesBundlesServiceFilterReq(
@@ -503,7 +503,7 @@ test('Retrieve all the Equations Sales Bundles', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the General Streams', () async {
+  test('Retrieve all the General Streams', () async {
     var serviceClient = getScailoClientForGeneralStreamsService();
     var resp = await serviceClient.filter(
       GeneralStreamsServiceFilterReq(
@@ -514,7 +514,7 @@ test('Retrieve all the General Streams', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Credit Notes', () async {
+  test('Retrieve all the Credit Notes', () async {
     var serviceClient = getScailoClientForCreditNotesService();
     var resp = await serviceClient.filter(
       CreditNotesServiceFilterReq(
@@ -525,7 +525,7 @@ test('Retrieve all the Credit Notes', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Transactional Emails', () async {
+  test('Retrieve all the Transactional Emails', () async {
     var serviceClient = getScailoClientForTransactionalEmailsService();
     var resp = await serviceClient.filter(
       TransactionalEmailsServiceFilterReq(
@@ -536,7 +536,7 @@ test('Retrieve all the Transactional Emails', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Inward Jobs Free Issue Materials', () async {
+  test('Retrieve all the Inward Jobs Free Issue Materials', () async {
     var serviceClient = getScailoClientForInwardJobsFreeIssueMaterialsService();
     var resp = await serviceClient.filter(
       InwardJobsFreeIssueMaterialsServiceFilterReq(
@@ -547,7 +547,7 @@ test('Retrieve all the Inward Jobs Free Issue Materials', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Work Orders', () async {
+  test('Retrieve all the Work Orders', () async {
     var serviceClient = getScailoClientForWorkOrdersService();
     var resp = await serviceClient.filter(
       WorkOrdersServiceFilterReq(
@@ -558,7 +558,7 @@ test('Retrieve all the Work Orders', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Storages', () async {
+  test('Retrieve all the Storages', () async {
     var serviceClient = getScailoClientForStoragesService();
     var resp = await serviceClient.filter(
       StoragesServiceFilterReq(
@@ -569,7 +569,7 @@ test('Retrieve all the Storages', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Shifts', () async {
+  test('Retrieve all the Shifts', () async {
     var serviceClient = getScailoClientForShiftsService();
     var resp = await serviceClient.filter(
       ShiftsServiceFilterReq(
@@ -580,7 +580,7 @@ test('Retrieve all the Shifts', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Products', () async {
+  test('Retrieve all the Products', () async {
     var serviceClient = getScailoClientForProductsService();
     var resp = await serviceClient.filter(
       ProductsServiceFilterReq(
@@ -591,7 +591,7 @@ test('Retrieve all the Products', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Supply Offers', () async {
+  test('Retrieve all the Supply Offers', () async {
     var serviceClient = getScailoClientForSupplyOffersService();
     var resp = await serviceClient.filter(
       SupplyOffersServiceFilterReq(
@@ -602,7 +602,7 @@ test('Retrieve all the Supply Offers', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Equations Work Orders', () async {
+  test('Retrieve all the Equations Work Orders', () async {
     var serviceClient = getScailoClientForEquationsWorkOrdersService();
     var resp = await serviceClient.filter(
       EquationsWorkOrdersServiceFilterReq(
@@ -613,7 +613,7 @@ test('Retrieve all the Equations Work Orders', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Production Plans', () async {
+  test('Retrieve all the Production Plans', () async {
     var serviceClient = getScailoClientForProductionPlansService();
     var resp = await serviceClient.filter(
       ProductionPlansServiceFilterReq(
@@ -624,8 +624,9 @@ test('Retrieve all the Production Plans', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Inward Jobs Free Issue Materials Returns', () async {
-    var serviceClient = getScailoClientForInwardJobsFreeIssueMaterialsReturnsService();
+  test('Retrieve all the Inward Jobs Free Issue Materials Returns', () async {
+    var serviceClient =
+        getScailoClientForInwardJobsFreeIssueMaterialsReturnsService();
     var resp = await serviceClient.filter(
       InwardJobsFreeIssueMaterialsReturnsServiceFilterReq(
         count: Int64(-1),
@@ -635,7 +636,7 @@ test('Retrieve all the Inward Jobs Free Issue Materials Returns', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Tax Params', () async {
+  test('Retrieve all the Tax Params', () async {
     var serviceClient = getScailoClientForTaxParamsService();
     var resp = await serviceClient.filter(
       TaxParamsServiceFilterReq(
@@ -646,7 +647,7 @@ test('Retrieve all the Tax Params', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Purchases Payments', () async {
+  test('Retrieve all the Purchases Payments', () async {
     var serviceClient = getScailoClientForPurchasesPaymentsService();
     var resp = await serviceClient.filter(
       PurchasesPaymentsServiceFilterReq(
@@ -657,7 +658,7 @@ test('Retrieve all the Purchases Payments', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Units Of Materials', () async {
+  test('Retrieve all the Units Of Materials', () async {
     var serviceClient = getScailoClientForUnitsOfMaterialsService();
     var resp = await serviceClient.filter(
       UnitsOfMaterialsServiceFilterReq(
@@ -668,7 +669,7 @@ test('Retrieve all the Units Of Materials', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Purchases Returns', () async {
+  test('Retrieve all the Purchases Returns', () async {
     var serviceClient = getScailoClientForPurchasesReturnsService();
     var resp = await serviceClient.filter(
       PurchasesReturnsServiceFilterReq(
@@ -679,7 +680,7 @@ test('Retrieve all the Purchases Returns', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Activities Tags', () async {
+  test('Retrieve all the Activities Tags', () async {
     var serviceClient = getScailoClientForActivitiesTagsService();
     var resp = await serviceClient.filter(
       ActivitiesTagsServiceFilterReq(
@@ -690,7 +691,7 @@ test('Retrieve all the Activities Tags', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Leaves Adjustments', () async {
+  test('Retrieve all the Leaves Adjustments', () async {
     var serviceClient = getScailoClientForLeavesAdjustmentsService();
     var resp = await serviceClient.filter(
       LeavesAdjustmentsServiceFilterReq(
@@ -701,7 +702,7 @@ test('Retrieve all the Leaves Adjustments', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Quotations Requests', () async {
+  test('Retrieve all the Quotations Requests', () async {
     var serviceClient = getScailoClientForQuotationsRequestsService();
     var resp = await serviceClient.filter(
       QuotationsRequestsServiceFilterReq(
@@ -712,7 +713,7 @@ test('Retrieve all the Quotations Requests', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Meetings', () async {
+  test('Retrieve all the Meetings', () async {
     var serviceClient = getScailoClientForMeetingsService();
     var resp = await serviceClient.filter(
       MeetingsServiceFilterReq(
@@ -723,7 +724,7 @@ test('Retrieve all the Meetings', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Qc Groups', () async {
+  test('Retrieve all the Qc Groups', () async {
     var serviceClient = getScailoClientForQCGroupsService();
     var resp = await serviceClient.filter(
       QCGroupsServiceFilterReq(
@@ -734,7 +735,7 @@ test('Retrieve all the Qc Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Components', () async {
+  test('Retrieve all the Components', () async {
     var serviceClient = getScailoClientForComponentsService();
     var resp = await serviceClient.filter(
       ComponentsServiceFilterReq(
@@ -745,7 +746,7 @@ test('Retrieve all the Components', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Vendors', () async {
+  test('Retrieve all the Vendors', () async {
     var serviceClient = getScailoClientForVendorsService();
     var resp = await serviceClient.filter(
       VendorsServiceFilterReq(
@@ -756,7 +757,7 @@ test('Retrieve all the Vendors', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Families', () async {
+  test('Retrieve all the Families', () async {
     var serviceClient = getScailoClientForFamiliesService();
     var resp = await serviceClient.filter(
       FamiliesServiceFilterReq(
@@ -767,7 +768,7 @@ test('Retrieve all the Families', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Goals', () async {
+  test('Retrieve all the Goals', () async {
     var serviceClient = getScailoClientForGoalsService();
     var resp = await serviceClient.filter(
       GoalsServiceFilterReq(
@@ -778,7 +779,7 @@ test('Retrieve all the Goals', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Magic Links', () async {
+  test('Retrieve all the Magic Links', () async {
     var serviceClient = getScailoClientForMagicLinksService();
     var resp = await serviceClient.filter(
       MagicLinksServiceFilterReq(
@@ -789,7 +790,7 @@ test('Retrieve all the Magic Links', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Departments', () async {
+  test('Retrieve all the Departments', () async {
     var serviceClient = getScailoClientForDepartmentsService();
     var resp = await serviceClient.filter(
       DepartmentsServiceFilterReq(
@@ -800,7 +801,7 @@ test('Retrieve all the Departments', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Announcements', () async {
+  test('Retrieve all the Announcements', () async {
     var serviceClient = getScailoClientForAnnouncementsService();
     var resp = await serviceClient.filter(
       AnnouncementsServiceFilterReq(
@@ -811,7 +812,7 @@ test('Retrieve all the Announcements', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Forms Fields', () async {
+  test('Retrieve all the Forms Fields', () async {
     var serviceClient = getScailoClientForFormsFieldsService();
     var resp = await serviceClient.filter(
       FormsFieldsServiceFilterReq(
@@ -822,7 +823,7 @@ test('Retrieve all the Forms Fields', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Vendor Invoices', () async {
+  test('Retrieve all the Vendor Invoices', () async {
     var serviceClient = getScailoClientForVendorInvoicesService();
     var resp = await serviceClient.filter(
       VendorInvoicesServiceFilterReq(
@@ -833,7 +834,7 @@ test('Retrieve all the Vendor Invoices', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Asset Indents', () async {
+  test('Retrieve all the Asset Indents', () async {
     var serviceClient = getScailoClientForAssetIndentsService();
     var resp = await serviceClient.filter(
       AssetIndentsServiceFilterReq(
@@ -844,7 +845,7 @@ test('Retrieve all the Asset Indents', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Notes', () async {
+  test('Retrieve all the Notes', () async {
     var serviceClient = getScailoClientForNotesService();
     var resp = await serviceClient.filter(
       NotesServiceFilterReq(
@@ -855,7 +856,7 @@ test('Retrieve all the Notes', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Roles', () async {
+  test('Retrieve all the Roles', () async {
     var serviceClient = getScailoClientForRolesService();
     var resp = await serviceClient.filter(
       RolesServiceFilterReq(
@@ -866,7 +867,7 @@ test('Retrieve all the Roles', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Proforma Invoices', () async {
+  test('Retrieve all the Proforma Invoices', () async {
     var serviceClient = getScailoClientForProformaInvoicesService();
     var resp = await serviceClient.filter(
       ProformaInvoicesServiceFilterReq(
@@ -877,7 +878,7 @@ test('Retrieve all the Proforma Invoices', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Salaries', () async {
+  test('Retrieve all the Salaries', () async {
     var serviceClient = getScailoClientForSalariesService();
     var resp = await serviceClient.filter(
       SalariesServiceFilterReq(
@@ -888,7 +889,7 @@ test('Retrieve all the Salaries', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Bank Accounts', () async {
+  test('Retrieve all the Bank Accounts', () async {
     var serviceClient = getScailoClientForBankAccountsService();
     var resp = await serviceClient.filter(
       BankAccountsServiceFilterReq(
@@ -899,7 +900,7 @@ test('Retrieve all the Bank Accounts', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Forms Sections', () async {
+  test('Retrieve all the Forms Sections', () async {
     var serviceClient = getScailoClientForFormsSectionsService();
     var resp = await serviceClient.filter(
       FormsSectionsServiceFilterReq(
@@ -910,7 +911,7 @@ test('Retrieve all the Forms Sections', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Payroll Params', () async {
+  test('Retrieve all the Payroll Params', () async {
     var serviceClient = getScailoClientForPayrollParamsService();
     var resp = await serviceClient.filter(
       PayrollParamsServiceFilterReq(
@@ -921,7 +922,7 @@ test('Retrieve all the Payroll Params', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Feedstocks', () async {
+  test('Retrieve all the Feedstocks', () async {
     var serviceClient = getScailoClientForFeedstocksService();
     var resp = await serviceClient.filter(
       FeedstocksServiceFilterReq(
@@ -932,7 +933,7 @@ test('Retrieve all the Feedstocks', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Goods Receipts', () async {
+  test('Retrieve all the Goods Receipts', () async {
     var serviceClient = getScailoClientForGoodsReceiptsService();
     var resp = await serviceClient.filter(
       GoodsReceiptsServiceFilterReq(
@@ -943,8 +944,9 @@ test('Retrieve all the Goods Receipts', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Outward Jobs Free Issue Materials', () async {
-    var serviceClient = getScailoClientForOutwardJobsFreeIssueMaterialsService();
+  test('Retrieve all the Outward Jobs Free Issue Materials', () async {
+    var serviceClient =
+        getScailoClientForOutwardJobsFreeIssueMaterialsService();
     var resp = await serviceClient.filter(
       OutwardJobsFreeIssueMaterialsServiceFilterReq(
         count: Int64(-1),
@@ -954,7 +956,7 @@ test('Retrieve all the Outward Jobs Free Issue Materials', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Sales Invoices', () async {
+  test('Retrieve all the Sales Invoices', () async {
     var serviceClient = getScailoClientForSalesInvoicesService();
     var resp = await serviceClient.filter(
       SalesInvoicesServiceFilterReq(
@@ -965,7 +967,7 @@ test('Retrieve all the Sales Invoices', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Purchases Enquiries', () async {
+  test('Retrieve all the Purchases Enquiries', () async {
     var serviceClient = getScailoClientForPurchasesEnquiriesService();
     var resp = await serviceClient.filter(
       PurchasesEnquiriesServiceFilterReq(
@@ -976,7 +978,7 @@ test('Retrieve all the Purchases Enquiries', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Users', () async {
+  test('Retrieve all the Users', () async {
     var serviceClient = getScailoClientForUsersService();
     var resp = await serviceClient.filter(
       UsersServiceFilterReq(
@@ -987,7 +989,7 @@ test('Retrieve all the Users', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Leaves Types', () async {
+  test('Retrieve all the Leaves Types', () async {
     var serviceClient = getScailoClientForLeavesTypesService();
     var resp = await serviceClient.filter(
       LeavesTypesServiceFilterReq(
@@ -998,7 +1000,7 @@ test('Retrieve all the Leaves Types', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Sales Receipts', () async {
+  test('Retrieve all the Sales Receipts', () async {
     var serviceClient = getScailoClientForSalesReceiptsService();
     var resp = await serviceClient.filter(
       SalesReceiptsServiceFilterReq(
@@ -1009,7 +1011,7 @@ test('Retrieve all the Sales Receipts', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Skills Groups', () async {
+  test('Retrieve all the Skills Groups', () async {
     var serviceClient = getScailoClientForSkillsGroupsService();
     var resp = await serviceClient.filter(
       SkillsGroupsServiceFilterReq(
@@ -1020,7 +1022,7 @@ test('Retrieve all the Skills Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Absences', () async {
+  test('Retrieve all the Absences', () async {
     var serviceClient = getScailoClientForAbsencesService();
     var resp = await serviceClient.filter(
       AbsencesServiceFilterReq(
@@ -1031,7 +1033,7 @@ test('Retrieve all the Absences', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Goods Dispatches', () async {
+  test('Retrieve all the Goods Dispatches', () async {
     var serviceClient = getScailoClientForGoodsDispatchesService();
     var resp = await serviceClient.filter(
       GoodsDispatchesServiceFilterReq(
@@ -1042,7 +1044,7 @@ test('Retrieve all the Goods Dispatches', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Quotations Responses', () async {
+  test('Retrieve all the Quotations Responses', () async {
     var serviceClient = getScailoClientForQuotationsResponsesService();
     var resp = await serviceClient.filter(
       QuotationsResponsesServiceFilterReq(
@@ -1053,7 +1055,7 @@ test('Retrieve all the Quotations Responses', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Equations Families', () async {
+  test('Retrieve all the Equations Families', () async {
     var serviceClient = getScailoClientForEquationsFamiliesService();
     var resp = await serviceClient.filter(
       EquationsFamiliesServiceFilterReq(
@@ -1064,7 +1066,7 @@ test('Retrieve all the Equations Families', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Sales Orders', () async {
+  test('Retrieve all the Sales Orders', () async {
     var serviceClient = getScailoClientForSalesOrdersService();
     var resp = await serviceClient.filter(
       SalesOrdersServiceFilterReq(
@@ -1075,7 +1077,7 @@ test('Retrieve all the Sales Orders', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Shifts Groups', () async {
+  test('Retrieve all the Shifts Groups', () async {
     var serviceClient = getScailoClientForShiftsGroupsService();
     var resp = await serviceClient.filter(
       ShiftsGroupsServiceFilterReq(
@@ -1086,8 +1088,9 @@ test('Retrieve all the Shifts Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Outward Jobs Free Issue Materials Returns', () async {
-    var serviceClient = getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService();
+  test('Retrieve all the Outward Jobs Free Issue Materials Returns', () async {
+    var serviceClient =
+        getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService();
     var resp = await serviceClient.filter(
       OutwardJobsFreeIssueMaterialsReturnsServiceFilterReq(
         count: Int64(-1),
@@ -1097,7 +1100,7 @@ test('Retrieve all the Outward Jobs Free Issue Materials Returns', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Labels', () async {
+  test('Retrieve all the Labels', () async {
     var serviceClient = getScailoClientForLabelsService();
     var resp = await serviceClient.filter(
       LabelsServiceFilterReq(
@@ -1108,7 +1111,7 @@ test('Retrieve all the Labels', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Leaves Logs', () async {
+  test('Retrieve all the Leaves Logs', () async {
     var serviceClient = getScailoClientForLeavesLogsService();
     var resp = await serviceClient.filter(
       LeavesLogsServiceFilterReq(
@@ -1119,7 +1122,7 @@ test('Retrieve all the Leaves Logs', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Attendances', () async {
+  test('Retrieve all the Attendances', () async {
     var serviceClient = getScailoClientForAttendancesService();
     var resp = await serviceClient.filter(
       AttendancesServiceFilterReq(
@@ -1130,7 +1133,7 @@ test('Retrieve all the Attendances', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Expenses', () async {
+  test('Retrieve all the Expenses', () async {
     var serviceClient = getScailoClientForExpensesService();
     var resp = await serviceClient.filter(
       ExpensesServiceFilterReq(
@@ -1141,7 +1144,7 @@ test('Retrieve all the Expenses', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Merchandises', () async {
+  test('Retrieve all the Merchandises', () async {
     var serviceClient = getScailoClientForMerchandisesService();
     var resp = await serviceClient.filter(
       MerchandisesServiceFilterReq(
@@ -1152,7 +1155,7 @@ test('Retrieve all the Merchandises', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Sales Quotations', () async {
+  test('Retrieve all the Sales Quotations', () async {
     var serviceClient = getScailoClientForSalesQuotationsService();
     var resp = await serviceClient.filter(
       SalesQuotationsServiceFilterReq(
@@ -1163,7 +1166,7 @@ test('Retrieve all the Sales Quotations', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Outward Jobs', () async {
+  test('Retrieve all the Outward Jobs', () async {
     var serviceClient = getScailoClientForOutwardJobsService();
     var resp = await serviceClient.filter(
       OutwardJobsServiceFilterReq(
@@ -1174,7 +1177,7 @@ test('Retrieve all the Outward Jobs', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Replaceable Indents', () async {
+  test('Retrieve all the Replaceable Indents', () async {
     var serviceClient = getScailoClientForReplaceableIndentsService();
     var resp = await serviceClient.filter(
       ReplaceableIndentsServiceFilterReq(
@@ -1185,7 +1188,7 @@ test('Retrieve all the Replaceable Indents', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Payroll Groups', () async {
+  test('Retrieve all the Payroll Groups', () async {
     var serviceClient = getScailoClientForPayrollGroupsService();
     var resp = await serviceClient.filter(
       PayrollGroupsServiceFilterReq(
@@ -1196,7 +1199,7 @@ test('Retrieve all the Payroll Groups', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Infrastructures', () async {
+  test('Retrieve all the Infrastructures', () async {
     var serviceClient = getScailoClientForInfrastructuresService();
     var resp = await serviceClient.filter(
       InfrastructuresServiceFilterReq(
@@ -1207,7 +1210,7 @@ test('Retrieve all the Infrastructures', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Projects', () async {
+  test('Retrieve all the Projects', () async {
     var serviceClient = getScailoClientForProjectsService();
     var resp = await serviceClient.filter(
       ProjectsServiceFilterReq(
@@ -1218,7 +1221,7 @@ test('Retrieve all the Projects', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Skills Params', () async {
+  test('Retrieve all the Skills Params', () async {
     var serviceClient = getScailoClientForSkillsParamsService();
     var resp = await serviceClient.filter(
       SkillsParamsServiceFilterReq(
@@ -1229,7 +1232,7 @@ test('Retrieve all the Skills Params', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Stores', () async {
+  test('Retrieve all the Stores', () async {
     var serviceClient = getScailoClientForStoresService();
     var resp = await serviceClient.filter(
       StoresServiceFilterReq(
@@ -1240,7 +1243,7 @@ test('Retrieve all the Stores', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Visitations', () async {
+  test('Retrieve all the Visitations', () async {
     var serviceClient = getScailoClientForVisitationsService();
     var resp = await serviceClient.filter(
       VisitationsServiceFilterReq(
@@ -1251,7 +1254,7 @@ test('Retrieve all the Visitations', () async {
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
 
-test('Retrieve all the Sales Enquiries', () async {
+  test('Retrieve all the Sales Enquiries', () async {
     var serviceClient = getScailoClientForSalesEnquiriesService();
     var resp = await serviceClient.filter(
       SalesEnquiriesServiceFilterReq(
@@ -1261,5 +1264,4 @@ test('Retrieve all the Sales Enquiries', () async {
     );
     expect(resp.list.length, greaterThanOrEqualTo(0));
   });
-
 }

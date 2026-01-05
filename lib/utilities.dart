@@ -246,7 +246,8 @@ AssociatesServiceClient getScailoClientForAssociatesService() {
 }
 
 /// Get the client to access the Attendances Amendments service
-AttendancesAmendmentsServiceClient getScailoClientForAttendancesAmendmentsService() {
+AttendancesAmendmentsServiceClient
+getScailoClientForAttendancesAmendmentsService() {
   return AttendancesAmendmentsServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -367,7 +368,8 @@ EquationsFamiliesServiceClient getScailoClientForEquationsFamiliesService() {
 }
 
 /// Get the client to access the Equations Replaceables service
-EquationsReplaceablesServiceClient getScailoClientForEquationsReplaceablesService() {
+EquationsReplaceablesServiceClient
+getScailoClientForEquationsReplaceablesService() {
   return EquationsReplaceablesServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -378,7 +380,8 @@ EquationsReplaceablesServiceClient getScailoClientForEquationsReplaceablesServic
 }
 
 /// Get the client to access the Equations Sales Bundles service
-EquationsSalesBundlesServiceClient getScailoClientForEquationsSalesBundlesService() {
+EquationsSalesBundlesServiceClient
+getScailoClientForEquationsSalesBundlesService() {
   return EquationsSalesBundlesServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -389,7 +392,8 @@ EquationsSalesBundlesServiceClient getScailoClientForEquationsSalesBundlesServic
 }
 
 /// Get the client to access the Equations Work Orders service
-EquationsWorkOrdersServiceClient getScailoClientForEquationsWorkOrdersService() {
+EquationsWorkOrdersServiceClient
+getScailoClientForEquationsWorkOrdersService() {
   return EquationsWorkOrdersServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -565,7 +569,8 @@ InventoryServiceClient getScailoClientForInventoryService() {
 }
 
 /// Get the client to access the Inward Jobs Free Issue Materials Returns service
-InwardJobsFreeIssueMaterialsReturnsServiceClient getScailoClientForInwardJobsFreeIssueMaterialsReturnsService() {
+InwardJobsFreeIssueMaterialsReturnsServiceClient
+getScailoClientForInwardJobsFreeIssueMaterialsReturnsService() {
   return InwardJobsFreeIssueMaterialsReturnsServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -576,7 +581,8 @@ InwardJobsFreeIssueMaterialsReturnsServiceClient getScailoClientForInwardJobsFre
 }
 
 /// Get the client to access the Inward Jobs Free Issue Materials service
-InwardJobsFreeIssueMaterialsServiceClient getScailoClientForInwardJobsFreeIssueMaterialsService() {
+InwardJobsFreeIssueMaterialsServiceClient
+getScailoClientForInwardJobsFreeIssueMaterialsService() {
   return InwardJobsFreeIssueMaterialsServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -741,7 +747,8 @@ OnDutiesServiceClient getScailoClientForOnDutiesService() {
 }
 
 /// Get the client to access the Outward Jobs Free Issue Materials Returns service
-OutwardJobsFreeIssueMaterialsReturnsServiceClient getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService() {
+OutwardJobsFreeIssueMaterialsReturnsServiceClient
+getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService() {
   return OutwardJobsFreeIssueMaterialsReturnsServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -752,7 +759,8 @@ OutwardJobsFreeIssueMaterialsReturnsServiceClient getScailoClientForOutwardJobsF
 }
 
 /// Get the client to access the Outward Jobs Free Issue Materials service
-OutwardJobsFreeIssueMaterialsServiceClient getScailoClientForOutwardJobsFreeIssueMaterialsService() {
+OutwardJobsFreeIssueMaterialsServiceClient
+getScailoClientForOutwardJobsFreeIssueMaterialsService() {
   return OutwardJobsFreeIssueMaterialsServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -961,7 +969,8 @@ QuotationsRequestsServiceClient getScailoClientForQuotationsRequestsService() {
 }
 
 /// Get the client to access the Quotations Responses service
-QuotationsResponsesServiceClient getScailoClientForQuotationsResponsesService() {
+QuotationsResponsesServiceClient
+getScailoClientForQuotationsResponsesService() {
   return QuotationsResponsesServiceClient(
     getClientChannel(),
     options: CallOptions(
@@ -1214,7 +1223,8 @@ TeamsServiceClient getScailoClientForTeamsService() {
 }
 
 /// Get the client to access the Transactional Emails service
-TransactionalEmailsServiceClient getScailoClientForTransactionalEmailsService() {
+TransactionalEmailsServiceClient
+getScailoClientForTransactionalEmailsService() {
   return TransactionalEmailsServiceClient(
     getClientChannel(),
     options: CallOptions(

@@ -1,7 +1,8 @@
 name: scailo_sdk
-description: "Dart SDK for accessing Scailo API"
-version: 0.0.1
-homepage: https://github.com/scailo/dart-sdk
+description: "Official Dart client for Scailo. Seamlessly integrate with Scailo's API-first ERP to automate workflows, manage resources, and build custom business solutions in Dart."
+version: 0.0.2
+repository: https://github.com/scailo/dart-sdk
+homepage: https://scailo.com
 
 environment:
   sdk: ^3.9.0
