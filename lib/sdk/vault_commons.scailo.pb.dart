@@ -1243,6 +1243,91 @@ class EnclaveResources extends $pb.GeneratedMessage {
 }
 
 ///
+/// Describes each environment variable that is defined in the Manifest of an Enclave
+class EnclaveManifestEnvVariable extends $pb.GeneratedMessage {
+  factory EnclaveManifestEnvVariable({
+    $core.String? name,
+    $core.String? value,
+    $core.bool? isSecret,
+  }) {
+    final result = create();
+    if (name != null) result.name = name;
+    if (value != null) result.value = value;
+    if (isSecret != null) result.isSecret = isSecret;
+    return result;
+  }
+
+  EnclaveManifestEnvVariable._();
+
+  factory EnclaveManifestEnvVariable.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveManifestEnvVariable.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveManifestEnvVariable',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOS(2, _omitFieldNames ? '' : 'value')
+    ..aOB(3, _omitFieldNames ? '' : 'is_secret')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveManifestEnvVariable clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveManifestEnvVariable copyWith(
+          void Function(EnclaveManifestEnvVariable) updates) =>
+      super.copyWith(
+              (message) => updates(message as EnclaveManifestEnvVariable))
+          as EnclaveManifestEnvVariable;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveManifestEnvVariable create() => EnclaveManifestEnvVariable._();
+  @$core.override
+  EnclaveManifestEnvVariable createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveManifestEnvVariable getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveManifestEnvVariable>(create);
+  static EnclaveManifestEnvVariable? _defaultInstance;
+
+  /// Stores the name of the environment variable
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => $_clearField(1);
+
+  /// Stores the default value of the environment variable
+  @$pb.TagNumber(2)
+  $core.String get value => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set value($core.String value) => $_setString(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasValue() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearValue() => $_clearField(2);
+
+  /// Stores if the variable is a secret
+  @$pb.TagNumber(3)
+  $core.bool get isSecret => $_getBF(2);
+  @$pb.TagNumber(3)
+  set isSecret($core.bool value) => $_setBool(2, value);
+  @$pb.TagNumber(3)
+  $core.bool hasIsSecret() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearIsSecret() => $_clearField(3);
+}
+
+///
 /// Describes the manifest file of an Enclave. Stores the attributes that can be a part of the MANIFEST.yaml file, that is present in the root folder of an Enclave
 class EnclaveManifest extends $pb.GeneratedMessage {
   factory EnclaveManifest({
@@ -1254,6 +1339,7 @@ class EnclaveManifest extends $pb.GeneratedMessage {
     $core.String? appUniqueIdentifier,
     $core.String? startExec,
     $core.String? entryPointManagement,
+    $core.Iterable<EnclaveManifestEnvVariable>? envVariables,
     EnclaveResources? resources,
   }) {
     final result = create();
@@ -1267,6 +1353,7 @@ class EnclaveManifest extends $pb.GeneratedMessage {
     if (startExec != null) result.startExec = startExec;
     if (entryPointManagement != null)
       result.entryPointManagement = entryPointManagement;
+    if (envVariables != null) result.envVariables.addAll(envVariables);
     if (resources != null) result.resources = resources;
     return result;
   }
@@ -1292,6 +1379,8 @@ class EnclaveManifest extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'app_unique_identifier')
     ..aOS(7, _omitFieldNames ? '' : 'start_exec')
     ..aOS(8, _omitFieldNames ? '' : 'entry_point_management')
+    ..pPM<EnclaveManifestEnvVariable>(9, _omitFieldNames ? '' : 'env_variables',
+        subBuilder: EnclaveManifestEnvVariable.create)
     ..aOM<EnclaveResources>(10, _omitFieldNames ? '' : 'resources',
         subBuilder: EnclaveResources.create)
     ..hasRequiredFields = false;
@@ -1395,17 +1484,21 @@ class EnclaveManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearEntryPointManagement() => $_clearField(8);
 
+  /// Stores the list of default environment variables
+  @$pb.TagNumber(9)
+  $pb.PbList<EnclaveManifestEnvVariable> get envVariables => $_getList(8);
+
   /// Stores the resources of the Enclave
   @$pb.TagNumber(10)
-  EnclaveResources get resources => $_getN(8);
+  EnclaveResources get resources => $_getN(9);
   @$pb.TagNumber(10)
   set resources(EnclaveResources value) => $_setField(10, value);
   @$pb.TagNumber(10)
-  $core.bool hasResources() => $_has(8);
+  $core.bool hasResources() => $_has(9);
   @$pb.TagNumber(10)
   void clearResources() => $_clearField(10);
   @$pb.TagNumber(10)
-  EnclaveResources ensureResources() => $_ensure(8);
+  EnclaveResources ensureResources() => $_ensure(9);
 }
 
 ///

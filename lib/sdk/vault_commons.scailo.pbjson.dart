@@ -487,6 +487,22 @@ final $typed_data.Uint8List enclaveResourcesDescriptor = $convert.base64Decode(
     'ChBFbmNsYXZlUmVzb3VyY2VzEhQKBWxvZ29zGAEgAygJUgVsb2dvcxIYCgdmb2xkZXJzGAIgAy'
     'gJUgdmb2xkZXJzEhQKBWZpbGVzGAMgAygJUgVmaWxlcw==');
 
+@$core.Deprecated('Use enclaveManifestEnvVariableDescriptor instead')
+const EnclaveManifestEnvVariable$json = {
+  '1': 'EnclaveManifestEnvVariable',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
+    {'1': 'is_secret', '3': 3, '4': 1, '5': 8, '10': 'is_secret'},
+  ],
+};
+
+/// Descriptor for `EnclaveManifestEnvVariable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveManifestEnvVariableDescriptor =
+    $convert.base64Decode(
+        'ChpFbmNsYXZlTWFuaWZlc3RFbnZWYXJpYWJsZRISCgRuYW1lGAEgASgJUgRuYW1lEhQKBXZhbH'
+        'VlGAIgASgJUgV2YWx1ZRIcCglpc19zZWNyZXQYAyABKAhSCWlzX3NlY3JldA==');
+
 @$core.Deprecated('Use enclaveManifestDescriptor instead')
 const EnclaveManifest$json = {
   '1': 'EnclaveManifest',
@@ -520,6 +536,14 @@ const EnclaveManifest$json = {
       '10': 'entry_point_management'
     },
     {
+      '1': 'env_variables',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.Scailo.EnclaveManifestEnvVariable',
+      '10': 'env_variables'
+    },
+    {
       '1': 'resources',
       '3': 10,
       '4': 1,
@@ -539,8 +563,9 @@ final $typed_data.Uint8List enclaveManifestDescriptor = $convert.base64Decode(
     'YXZlX25hbWUSNAoVYXBwX3VuaXF1ZV9pZGVudGlmaWVyGAYgASgJUhVhcHBfdW5pcXVlX2lkZW'
     '50aWZpZXISHgoKc3RhcnRfZXhlYxgHIAEoCVIKc3RhcnRfZXhlYxJcChZlbnRyeV9wb2ludF9t'
     'YW5hZ2VtZW50GAggASgJQiS6SCFyH1IKZGlyZWN0X3VybFIRcGxhdGZvcm1fcmVkaXJlY3RSFm'
-    'VudHJ5X3BvaW50X21hbmFnZW1lbnQSNgoJcmVzb3VyY2VzGAogASgLMhguU2NhaWxvLkVuY2xh'
-    'dmVSZXNvdXJjZXNSCXJlc291cmNlcw==');
+    'VudHJ5X3BvaW50X21hbmFnZW1lbnQSSAoNZW52X3ZhcmlhYmxlcxgJIAMoCzIiLlNjYWlsby5F'
+    'bmNsYXZlTWFuaWZlc3RFbnZWYXJpYWJsZVINZW52X3ZhcmlhYmxlcxI2CglyZXNvdXJjZXMYCi'
+    'ABKAsyGC5TY2FpbG8uRW5jbGF2ZVJlc291cmNlc1IJcmVzb3VyY2Vz');
 
 @$core.Deprecated('Use enclaveIngressDescriptor instead')
 const EnclaveIngress$json = {

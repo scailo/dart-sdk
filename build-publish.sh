@@ -8,3 +8,6 @@ dart fix --apply
 
 # Dry run publish
 dart pub publish --dry-run
+
+# Publish
+# dart pub publish
