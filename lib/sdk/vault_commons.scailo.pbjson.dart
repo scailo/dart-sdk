@@ -1039,6 +1039,151 @@ final $typed_data.Uint8List enclaveDomainSuffixRespDescriptor =
         'ChdFbmNsYXZlRG9tYWluU3VmZml4UmVzcBIWCgZzdWZmaXgYASABKAlSBnN1ZmZpeBIUCgVyZW'
         'xheRgCIAEoCVIFcmVsYXk=');
 
+@$core.Deprecated('Use enclaveFrameAddRequestDescriptor instead')
+const EnclaveFrameAddRequest$json = {
+  '1': 'EnclaveFrameAddRequest',
+  '2': [
+    {'1': 'file_uuid', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'fileUuid'},
+    {'1': 'sequence_number', '3': 10, '4': 1, '5': 4, '10': 'sequenceNumber'},
+    {
+      '1': 'auto_refresh_interval',
+      '3': 11,
+      '4': 1,
+      '5': 4,
+      '10': 'autoRefreshInterval'
+    },
+    {'1': 'width', '3': 12, '4': 1, '5': 4, '10': 'width'},
+    {'1': 'height', '3': 13, '4': 1, '5': 4, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `EnclaveFrameAddRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveFrameAddRequestDescriptor = $convert.base64Decode(
+    'ChZFbmNsYXZlRnJhbWVBZGRSZXF1ZXN0EiUKCWZpbGVfdXVpZBgBIAEoCUIIukgFcgOwAQFSCG'
+    'ZpbGVVdWlkEicKD3NlcXVlbmNlX251bWJlchgKIAEoBFIOc2VxdWVuY2VOdW1iZXISMgoVYXV0'
+    'b19yZWZyZXNoX2ludGVydmFsGAsgASgEUhNhdXRvUmVmcmVzaEludGVydmFsEhQKBXdpZHRoGA'
+    'wgASgEUgV3aWR0aBIWCgZoZWlnaHQYDSABKARSBmhlaWdodA==');
+
+@$core.Deprecated('Use enclaveFrameUpdateRequestDescriptor instead')
+const EnclaveFrameUpdateRequest$json = {
+  '1': 'EnclaveFrameUpdateRequest',
+  '2': [
+    {'1': 'uuid', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'uuid'},
+    {'1': 'sequence_number', '3': 10, '4': 1, '5': 4, '10': 'sequenceNumber'},
+    {
+      '1': 'auto_refresh_interval',
+      '3': 11,
+      '4': 1,
+      '5': 4,
+      '10': 'autoRefreshInterval'
+    },
+    {'1': 'width', '3': 12, '4': 1, '5': 4, '10': 'width'},
+    {'1': 'height', '3': 13, '4': 1, '5': 4, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `EnclaveFrameUpdateRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveFrameUpdateRequestDescriptor = $convert.base64Decode(
+    'ChlFbmNsYXZlRnJhbWVVcGRhdGVSZXF1ZXN0EhwKBHV1aWQYASABKAlCCLpIBXIDsAEBUgR1dW'
+    'lkEicKD3NlcXVlbmNlX251bWJlchgKIAEoBFIOc2VxdWVuY2VOdW1iZXISMgoVYXV0b19yZWZy'
+    'ZXNoX2ludGVydmFsGAsgASgEUhNhdXRvUmVmcmVzaEludGVydmFsEhQKBXdpZHRoGAwgASgEUg'
+    'V3aWR0aBIWCgZoZWlnaHQYDSABKARSBmhlaWdodA==');
+
+@$core.Deprecated('Use enclaveFrameDescriptor instead')
+const EnclaveFrame$json = {
+  '1': 'EnclaveFrame',
+  '2': [
+    {'1': 'entity_uuid', '3': 1, '4': 1, '5': 9, '10': 'entityUuid'},
+    {
+      '1': 'metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.Scailo.EmployeeMetadata',
+      '10': 'metadata'
+    },
+    {'1': 'user_id', '3': 10, '4': 1, '5': 4, '10': 'userId'},
+    {'1': 'vault_file_id', '3': 11, '4': 1, '5': 4, '10': 'vaultFileId'},
+    {'1': 'sequence_number', '3': 20, '4': 1, '5': 4, '10': 'sequenceNumber'},
+    {
+      '1': 'auto_refresh_interval',
+      '3': 21,
+      '4': 1,
+      '5': 4,
+      '10': 'autoRefreshInterval'
+    },
+    {'1': 'width', '3': 22, '4': 1, '5': 4, '10': 'width'},
+    {'1': 'height', '3': 23, '4': 1, '5': 4, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `EnclaveFrame`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveFrameDescriptor = $convert.base64Decode(
+    'CgxFbmNsYXZlRnJhbWUSHwoLZW50aXR5X3V1aWQYASABKAlSCmVudGl0eVV1aWQSNAoIbWV0YW'
+    'RhdGEYAiABKAsyGC5TY2FpbG8uRW1wbG95ZWVNZXRhZGF0YVIIbWV0YWRhdGESFwoHdXNlcl9p'
+    'ZBgKIAEoBFIGdXNlcklkEiIKDXZhdWx0X2ZpbGVfaWQYCyABKARSC3ZhdWx0RmlsZUlkEicKD3'
+    'NlcXVlbmNlX251bWJlchgUIAEoBFIOc2VxdWVuY2VOdW1iZXISMgoVYXV0b19yZWZyZXNoX2lu'
+    'dGVydmFsGBUgASgEUhNhdXRvUmVmcmVzaEludGVydmFsEhQKBXdpZHRoGBYgASgEUgV3aWR0aB'
+    'IWCgZoZWlnaHQYFyABKARSBmhlaWdodA==');
+
+@$core.Deprecated('Use enclaveFrameSetupDescriptor instead')
+const EnclaveFrameSetup$json = {
+  '1': 'EnclaveFrameSetup',
+  '2': [
+    {'1': 'entity_uuid', '3': 1, '4': 1, '5': 9, '10': 'entityUuid'},
+    {'1': 'expires_at', '3': 10, '4': 1, '5': 4, '10': 'expiresAt'},
+    {'1': 'enclave_name', '3': 12, '4': 1, '5': 9, '10': 'enclaveName'},
+    {'1': 'app_endpoint', '3': 13, '4': 1, '5': 9, '10': 'appEndpoint'},
+    {
+      '1': 'enclave_frame_uuid',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'enclaveFrameUuid'
+    },
+    {'1': 'sequence_number', '3': 30, '4': 1, '5': 4, '10': 'sequenceNumber'},
+    {
+      '1': 'auto_refresh_interval',
+      '3': 31,
+      '4': 1,
+      '5': 4,
+      '10': 'autoRefreshInterval'
+    },
+    {'1': 'width', '3': 32, '4': 1, '5': 4, '10': 'width'},
+    {'1': 'height', '3': 33, '4': 1, '5': 4, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `EnclaveFrameSetup`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveFrameSetupDescriptor = $convert.base64Decode(
+    'ChFFbmNsYXZlRnJhbWVTZXR1cBIfCgtlbnRpdHlfdXVpZBgBIAEoCVIKZW50aXR5VXVpZBIdCg'
+    'pleHBpcmVzX2F0GAogASgEUglleHBpcmVzQXQSIQoMZW5jbGF2ZV9uYW1lGAwgASgJUgtlbmNs'
+    'YXZlTmFtZRIhCgxhcHBfZW5kcG9pbnQYDSABKAlSC2FwcEVuZHBvaW50EiwKEmVuY2xhdmVfZn'
+    'JhbWVfdXVpZBgUIAEoCVIQZW5jbGF2ZUZyYW1lVXVpZBInCg9zZXF1ZW5jZV9udW1iZXIYHiAB'
+    'KARSDnNlcXVlbmNlTnVtYmVyEjIKFWF1dG9fcmVmcmVzaF9pbnRlcnZhbBgfIAEoBFITYXV0b1'
+    'JlZnJlc2hJbnRlcnZhbBIUCgV3aWR0aBggIAEoBFIFd2lkdGgSFgoGaGVpZ2h0GCEgASgEUgZo'
+    'ZWlnaHQ=');
+
+@$core.Deprecated('Use enclaveFrameSetupListDescriptor instead')
+const EnclaveFrameSetupList$json = {
+  '1': 'EnclaveFrameSetupList',
+  '2': [
+    {
+      '1': 'list',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.Scailo.EnclaveFrameSetup',
+      '10': 'list'
+    },
+  ],
+};
+
+/// Descriptor for `EnclaveFrameSetupList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List enclaveFrameSetupListDescriptor = $convert.base64Decode(
+    'ChVFbmNsYXZlRnJhbWVTZXR1cExpc3QSLQoEbGlzdBgBIAMoCzIZLlNjYWlsby5FbmNsYXZlRn'
+    'JhbWVTZXR1cFIEbGlzdA==');
+
 @$core.Deprecated('Use vaultSearchReqDescriptor instead')
 const VaultSearchReq$json = {
   '1': 'VaultSearchReq',

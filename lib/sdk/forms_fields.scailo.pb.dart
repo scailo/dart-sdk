@@ -40,6 +40,7 @@ class FormField extends $pb.GeneratedMessage {
     $core.bool? isReadonly,
     $core.bool? isHidden,
     $core.bool? isSearchable,
+    $core.bool? isPublic,
   }) {
     final result = create();
     if (entityUuid != null) result.entityUuid = entityUuid;
@@ -56,6 +57,7 @@ class FormField extends $pb.GeneratedMessage {
     if (isReadonly != null) result.isReadonly = isReadonly;
     if (isHidden != null) result.isHidden = isHidden;
     if (isSearchable != null) result.isSearchable = isSearchable;
+    if (isPublic != null) result.isPublic = isPublic;
     return result;
   }
 
@@ -91,6 +93,7 @@ class FormField extends $pb.GeneratedMessage {
     ..aOB(30, _omitFieldNames ? '' : 'isReadonly')
     ..aOB(31, _omitFieldNames ? '' : 'isHidden')
     ..aOB(32, _omitFieldNames ? '' : 'isSearchable')
+    ..aOB(33, _omitFieldNames ? '' : 'isPublic')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -246,6 +249,16 @@ class FormField extends $pb.GeneratedMessage {
   $core.bool hasIsSearchable() => $_has(13);
   @$pb.TagNumber(32)
   void clearIsSearchable() => $_clearField(32);
+
+  /// Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+  @$pb.TagNumber(33)
+  $core.bool get isPublic => $_getBF(14);
+  @$pb.TagNumber(33)
+  set isPublic($core.bool value) => $_setBool(14, value);
+  @$pb.TagNumber(33)
+  $core.bool hasIsPublic() => $_has(14);
+  @$pb.TagNumber(33)
+  void clearIsPublic() => $_clearField(33);
 }
 
 ///
@@ -413,6 +426,7 @@ class FormsFieldsServiceCreateRequest extends $pb.GeneratedMessage {
     $core.bool? isReadonly,
     $core.bool? isHidden,
     $core.bool? isSearchable,
+    $core.bool? isPublic,
   }) {
     final result = create();
     if (entityUuid != null) result.entityUuid = entityUuid;
@@ -429,6 +443,7 @@ class FormsFieldsServiceCreateRequest extends $pb.GeneratedMessage {
     if (isReadonly != null) result.isReadonly = isReadonly;
     if (isHidden != null) result.isHidden = isHidden;
     if (isSearchable != null) result.isSearchable = isSearchable;
+    if (isPublic != null) result.isPublic = isPublic;
     return result;
   }
 
@@ -463,6 +478,7 @@ class FormsFieldsServiceCreateRequest extends $pb.GeneratedMessage {
     ..aOB(30, _omitFieldNames ? '' : 'isReadonly')
     ..aOB(31, _omitFieldNames ? '' : 'isHidden')
     ..aOB(32, _omitFieldNames ? '' : 'isSearchable')
+    ..aOB(33, _omitFieldNames ? '' : 'isPublic')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -621,6 +637,16 @@ class FormsFieldsServiceCreateRequest extends $pb.GeneratedMessage {
   $core.bool hasIsSearchable() => $_has(13);
   @$pb.TagNumber(32)
   void clearIsSearchable() => $_clearField(32);
+
+  /// Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+  @$pb.TagNumber(33)
+  $core.bool get isPublic => $_getBF(14);
+  @$pb.TagNumber(33)
+  set isPublic($core.bool value) => $_setBool(14, value);
+  @$pb.TagNumber(33)
+  $core.bool hasIsPublic() => $_has(14);
+  @$pb.TagNumber(33)
+  void clearIsPublic() => $_clearField(33);
 }
 
 ///
@@ -639,6 +665,7 @@ class FormsFieldsServiceUpdateRequest extends $pb.GeneratedMessage {
     $core.bool? isReadonly,
     $core.bool? isHidden,
     $core.bool? isSearchable,
+    $core.bool? isPublic,
   }) {
     final result = create();
     if (userComment != null) result.userComment = userComment;
@@ -653,6 +680,7 @@ class FormsFieldsServiceUpdateRequest extends $pb.GeneratedMessage {
     if (isReadonly != null) result.isReadonly = isReadonly;
     if (isHidden != null) result.isHidden = isHidden;
     if (isSearchable != null) result.isSearchable = isSearchable;
+    if (isPublic != null) result.isPublic = isPublic;
     return result;
   }
 
@@ -684,6 +712,7 @@ class FormsFieldsServiceUpdateRequest extends $pb.GeneratedMessage {
     ..aOB(30, _omitFieldNames ? '' : 'isReadonly')
     ..aOB(31, _omitFieldNames ? '' : 'isHidden')
     ..aOB(32, _omitFieldNames ? '' : 'isSearchable')
+    ..aOB(33, _omitFieldNames ? '' : 'isPublic')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -822,6 +851,16 @@ class FormsFieldsServiceUpdateRequest extends $pb.GeneratedMessage {
   $core.bool hasIsSearchable() => $_has(11);
   @$pb.TagNumber(32)
   void clearIsSearchable() => $_clearField(32);
+
+  /// Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+  @$pb.TagNumber(33)
+  $core.bool get isPublic => $_getBF(12);
+  @$pb.TagNumber(33)
+  set isPublic($core.bool value) => $_setBool(12, value);
+  @$pb.TagNumber(33)
+  $core.bool hasIsPublic() => $_has(12);
+  @$pb.TagNumber(33)
+  void clearIsPublic() => $_clearField(33);
 }
 
 ///

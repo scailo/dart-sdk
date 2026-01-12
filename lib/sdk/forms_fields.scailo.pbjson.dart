@@ -75,6 +75,7 @@ const FormField$json = {
     {'1': 'is_readonly', '3': 30, '4': 1, '5': 8, '10': 'isReadonly'},
     {'1': 'is_hidden', '3': 31, '4': 1, '5': 8, '10': 'isHidden'},
     {'1': 'is_searchable', '3': 32, '4': 1, '5': 8, '10': 'isSearchable'},
+    {'1': 'is_public', '3': 33, '4': 1, '5': 8, '10': 'isPublic'},
   ],
 };
 
@@ -88,7 +89,8 @@ final $typed_data.Uint8List formFieldDescriptor = $convert.base64Decode(
     'VsZW1lbnQSIAoLcGxhY2Vob2xkZXIYDyABKAlSC3BsYWNlaG9sZGVyEhQKBXJlZ2V4GBAgASgJ'
     'UgVyZWdleBIlCg5kZWZpbmVkX3ZhbHVlcxgRIAMoCVINZGVmaW5lZFZhbHVlcxIfCgtpc19yZW'
     'Fkb25seRgeIAEoCFIKaXNSZWFkb25seRIbCglpc19oaWRkZW4YHyABKAhSCGlzSGlkZGVuEiMK'
-    'DWlzX3NlYXJjaGFibGUYICABKAhSDGlzU2VhcmNoYWJsZQ==');
+    'DWlzX3NlYXJjaGFibGUYICABKAhSDGlzU2VhcmNoYWJsZRIbCglpc19wdWJsaWMYISABKAhSCG'
+    'lzUHVibGlj');
 
 @$core.Deprecated('Use formsFieldsListDescriptor instead')
 const FormsFieldsList$json = {
@@ -166,6 +168,7 @@ const FormsFieldsServiceCreateRequest$json = {
     {'1': 'is_readonly', '3': 30, '4': 1, '5': 8, '10': 'isReadonly'},
     {'1': 'is_hidden', '3': 31, '4': 1, '5': 8, '10': 'isHidden'},
     {'1': 'is_searchable', '3': 32, '4': 1, '5': 8, '10': 'isSearchable'},
+    {'1': 'is_public', '3': 33, '4': 1, '5': 8, '10': 'isPublic'},
   ],
 };
 
@@ -180,7 +183,7 @@ final $typed_data.Uint8List formsFieldsServiceCreateRequestDescriptor = $convert
     'chgPIAEoCVILcGxhY2Vob2xkZXISFAoFcmVnZXgYECABKAlSBXJlZ2V4EiUKDmRlZmluZWRfdm'
     'FsdWVzGBEgAygJUg1kZWZpbmVkVmFsdWVzEh8KC2lzX3JlYWRvbmx5GB4gASgIUgppc1JlYWRv'
     'bmx5EhsKCWlzX2hpZGRlbhgfIAEoCFIIaXNIaWRkZW4SIwoNaXNfc2VhcmNoYWJsZRggIAEoCF'
-    'IMaXNTZWFyY2hhYmxl');
+    'IMaXNTZWFyY2hhYmxlEhsKCWlzX3B1YmxpYxghIAEoCFIIaXNQdWJsaWM=');
 
 @$core.Deprecated('Use formsFieldsServiceUpdateRequestDescriptor instead')
 const FormsFieldsServiceUpdateRequest$json = {
@@ -198,6 +201,7 @@ const FormsFieldsServiceUpdateRequest$json = {
     {'1': 'is_readonly', '3': 30, '4': 1, '5': 8, '10': 'isReadonly'},
     {'1': 'is_hidden', '3': 31, '4': 1, '5': 8, '10': 'isHidden'},
     {'1': 'is_searchable', '3': 32, '4': 1, '5': 8, '10': 'isSearchable'},
+    {'1': 'is_public', '3': 33, '4': 1, '5': 8, '10': 'isPublic'},
   ],
 };
 
@@ -210,7 +214,7 @@ final $typed_data.Uint8List formsFieldsServiceUpdateRequestDescriptor = $convert
     'cGxhY2Vob2xkZXIYDyABKAlSC3BsYWNlaG9sZGVyEhQKBXJlZ2V4GBAgASgJUgVyZWdleBIlCg'
     '5kZWZpbmVkX3ZhbHVlcxgRIAMoCVINZGVmaW5lZFZhbHVlcxIfCgtpc19yZWFkb25seRgeIAEo'
     'CFIKaXNSZWFkb25seRIbCglpc19oaWRkZW4YHyABKAhSCGlzSGlkZGVuEiMKDWlzX3NlYXJjaG'
-    'FibGUYICABKAhSDGlzU2VhcmNoYWJsZQ==');
+    'FibGUYICABKAhSDGlzU2VhcmNoYWJsZRIbCglpc19wdWJsaWMYISABKAhSCGlzUHVibGlj');
 
 @$core.Deprecated('Use formsFieldsServicePaginationReqDescriptor instead')
 const FormsFieldsServicePaginationReq$json = {

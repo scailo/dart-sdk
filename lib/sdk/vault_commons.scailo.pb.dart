@@ -3201,6 +3201,624 @@ class EnclaveDomainSuffixResp extends $pb.GeneratedMessage {
   void clearRelay() => $_clearField(2);
 }
 
+///
+/// Stores the payload that is necessary to create a custom frame for an enclave
+class EnclaveFrameAddRequest extends $pb.GeneratedMessage {
+  factory EnclaveFrameAddRequest({
+    $core.String? fileUuid,
+    $fixnum.Int64? sequenceNumber,
+    $fixnum.Int64? autoRefreshInterval,
+    $fixnum.Int64? width,
+    $fixnum.Int64? height,
+  }) {
+    final result = create();
+    if (fileUuid != null) result.fileUuid = fileUuid;
+    if (sequenceNumber != null) result.sequenceNumber = sequenceNumber;
+    if (autoRefreshInterval != null)
+      result.autoRefreshInterval = autoRefreshInterval;
+    if (width != null) result.width = width;
+    if (height != null) result.height = height;
+    return result;
+  }
+
+  EnclaveFrameAddRequest._();
+
+  factory EnclaveFrameAddRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveFrameAddRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveFrameAddRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'fileUuid')
+    ..a<$fixnum.Int64>(
+        10, _omitFieldNames ? '' : 'sequenceNumber', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        11, _omitFieldNames ? '' : 'autoRefreshInterval', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(12, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(13, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameAddRequest clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameAddRequest copyWith(
+          void Function(EnclaveFrameAddRequest) updates) =>
+      super.copyWith((message) => updates(message as EnclaveFrameAddRequest))
+          as EnclaveFrameAddRequest;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameAddRequest create() => EnclaveFrameAddRequest._();
+  @$core.override
+  EnclaveFrameAddRequest createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameAddRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveFrameAddRequest>(create);
+  static EnclaveFrameAddRequest? _defaultInstance;
+
+  /// The UUID of the enclave file that will be updated with the given frame
+  @$pb.TagNumber(1)
+  $core.String get fileUuid => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set fileUuid($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasFileUuid() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearFileUuid() => $_clearField(1);
+
+  /// The sequence number of the frame
+  @$pb.TagNumber(10)
+  $fixnum.Int64 get sequenceNumber => $_getI64(1);
+  @$pb.TagNumber(10)
+  set sequenceNumber($fixnum.Int64 value) => $_setInt64(1, value);
+  @$pb.TagNumber(10)
+  $core.bool hasSequenceNumber() => $_has(1);
+  @$pb.TagNumber(10)
+  void clearSequenceNumber() => $_clearField(10);
+
+  /// The time in seconds after which the frame needs to be refreshed
+  @$pb.TagNumber(11)
+  $fixnum.Int64 get autoRefreshInterval => $_getI64(2);
+  @$pb.TagNumber(11)
+  set autoRefreshInterval($fixnum.Int64 value) => $_setInt64(2, value);
+  @$pb.TagNumber(11)
+  $core.bool hasAutoRefreshInterval() => $_has(2);
+  @$pb.TagNumber(11)
+  void clearAutoRefreshInterval() => $_clearField(11);
+
+  /// The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+  @$pb.TagNumber(12)
+  $fixnum.Int64 get width => $_getI64(3);
+  @$pb.TagNumber(12)
+  set width($fixnum.Int64 value) => $_setInt64(3, value);
+  @$pb.TagNumber(12)
+  $core.bool hasWidth() => $_has(3);
+  @$pb.TagNumber(12)
+  void clearWidth() => $_clearField(12);
+
+  /// The height of the frame in vh (viewport height)
+  @$pb.TagNumber(13)
+  $fixnum.Int64 get height => $_getI64(4);
+  @$pb.TagNumber(13)
+  set height($fixnum.Int64 value) => $_setInt64(4, value);
+  @$pb.TagNumber(13)
+  $core.bool hasHeight() => $_has(4);
+  @$pb.TagNumber(13)
+  void clearHeight() => $_clearField(13);
+}
+
+///
+/// Stores the payload that is necessary to update a custom frame for an enclave
+class EnclaveFrameUpdateRequest extends $pb.GeneratedMessage {
+  factory EnclaveFrameUpdateRequest({
+    $core.String? uuid,
+    $fixnum.Int64? sequenceNumber,
+    $fixnum.Int64? autoRefreshInterval,
+    $fixnum.Int64? width,
+    $fixnum.Int64? height,
+  }) {
+    final result = create();
+    if (uuid != null) result.uuid = uuid;
+    if (sequenceNumber != null) result.sequenceNumber = sequenceNumber;
+    if (autoRefreshInterval != null)
+      result.autoRefreshInterval = autoRefreshInterval;
+    if (width != null) result.width = width;
+    if (height != null) result.height = height;
+    return result;
+  }
+
+  EnclaveFrameUpdateRequest._();
+
+  factory EnclaveFrameUpdateRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveFrameUpdateRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveFrameUpdateRequest',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'uuid')
+    ..a<$fixnum.Int64>(
+        10, _omitFieldNames ? '' : 'sequenceNumber', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        11, _omitFieldNames ? '' : 'autoRefreshInterval', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(12, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(13, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameUpdateRequest clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameUpdateRequest copyWith(
+          void Function(EnclaveFrameUpdateRequest) updates) =>
+      super.copyWith((message) => updates(message as EnclaveFrameUpdateRequest))
+          as EnclaveFrameUpdateRequest;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameUpdateRequest create() => EnclaveFrameUpdateRequest._();
+  @$core.override
+  EnclaveFrameUpdateRequest createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameUpdateRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveFrameUpdateRequest>(create);
+  static EnclaveFrameUpdateRequest? _defaultInstance;
+
+  /// The UUID of the frame that needs to be updated
+  @$pb.TagNumber(1)
+  $core.String get uuid => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set uuid($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasUuid() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearUuid() => $_clearField(1);
+
+  /// The sequence number of the frame
+  @$pb.TagNumber(10)
+  $fixnum.Int64 get sequenceNumber => $_getI64(1);
+  @$pb.TagNumber(10)
+  set sequenceNumber($fixnum.Int64 value) => $_setInt64(1, value);
+  @$pb.TagNumber(10)
+  $core.bool hasSequenceNumber() => $_has(1);
+  @$pb.TagNumber(10)
+  void clearSequenceNumber() => $_clearField(10);
+
+  /// The time in seconds after which the frame needs to be refreshed
+  @$pb.TagNumber(11)
+  $fixnum.Int64 get autoRefreshInterval => $_getI64(2);
+  @$pb.TagNumber(11)
+  set autoRefreshInterval($fixnum.Int64 value) => $_setInt64(2, value);
+  @$pb.TagNumber(11)
+  $core.bool hasAutoRefreshInterval() => $_has(2);
+  @$pb.TagNumber(11)
+  void clearAutoRefreshInterval() => $_clearField(11);
+
+  /// The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+  @$pb.TagNumber(12)
+  $fixnum.Int64 get width => $_getI64(3);
+  @$pb.TagNumber(12)
+  set width($fixnum.Int64 value) => $_setInt64(3, value);
+  @$pb.TagNumber(12)
+  $core.bool hasWidth() => $_has(3);
+  @$pb.TagNumber(12)
+  void clearWidth() => $_clearField(12);
+
+  /// The height of the frame in vh (viewport height)
+  @$pb.TagNumber(13)
+  $fixnum.Int64 get height => $_getI64(4);
+  @$pb.TagNumber(13)
+  set height($fixnum.Int64 value) => $_setInt64(4, value);
+  @$pb.TagNumber(13)
+  $core.bool hasHeight() => $_has(4);
+  @$pb.TagNumber(13)
+  void clearHeight() => $_clearField(13);
+}
+
+///
+/// Denotes an individual frame that is part of an enclave
+class EnclaveFrame extends $pb.GeneratedMessage {
+  factory EnclaveFrame({
+    $core.String? entityUuid,
+    $0.EmployeeMetadata? metadata,
+    $fixnum.Int64? userId,
+    $fixnum.Int64? vaultFileId,
+    $fixnum.Int64? sequenceNumber,
+    $fixnum.Int64? autoRefreshInterval,
+    $fixnum.Int64? width,
+    $fixnum.Int64? height,
+  }) {
+    final result = create();
+    if (entityUuid != null) result.entityUuid = entityUuid;
+    if (metadata != null) result.metadata = metadata;
+    if (userId != null) result.userId = userId;
+    if (vaultFileId != null) result.vaultFileId = vaultFileId;
+    if (sequenceNumber != null) result.sequenceNumber = sequenceNumber;
+    if (autoRefreshInterval != null)
+      result.autoRefreshInterval = autoRefreshInterval;
+    if (width != null) result.width = width;
+    if (height != null) result.height = height;
+    return result;
+  }
+
+  EnclaveFrame._();
+
+  factory EnclaveFrame.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveFrame.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveFrame',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'entityUuid')
+    ..aOM<$0.EmployeeMetadata>(2, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $0.EmployeeMetadata.create)
+    ..a<$fixnum.Int64>(10, _omitFieldNames ? '' : 'userId', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        11, _omitFieldNames ? '' : 'vaultFileId', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        20, _omitFieldNames ? '' : 'sequenceNumber', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        21, _omitFieldNames ? '' : 'autoRefreshInterval', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(22, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(23, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrame clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrame copyWith(void Function(EnclaveFrame) updates) =>
+      super.copyWith((message) => updates(message as EnclaveFrame))
+          as EnclaveFrame;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrame create() => EnclaveFrame._();
+  @$core.override
+  EnclaveFrame createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrame getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveFrame>(create);
+  static EnclaveFrame? _defaultInstance;
+
+  /// Stores a globally unique entity UUID. This will be set at the organization level
+  @$pb.TagNumber(1)
+  $core.String get entityUuid => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set entityUuid($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEntityUuid() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEntityUuid() => $_clearField(1);
+
+  /// Stores the metadata of this user
+  @$pb.TagNumber(2)
+  $0.EmployeeMetadata get metadata => $_getN(1);
+  @$pb.TagNumber(2)
+  set metadata($0.EmployeeMetadata value) => $_setField(2, value);
+  @$pb.TagNumber(2)
+  $core.bool hasMetadata() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMetadata() => $_clearField(2);
+  @$pb.TagNumber(2)
+  $0.EmployeeMetadata ensureMetadata() => $_ensure(1);
+
+  /// Stores the ID of the user that the frame belongs to
+  @$pb.TagNumber(10)
+  $fixnum.Int64 get userId => $_getI64(2);
+  @$pb.TagNumber(10)
+  set userId($fixnum.Int64 value) => $_setInt64(2, value);
+  @$pb.TagNumber(10)
+  $core.bool hasUserId() => $_has(2);
+  @$pb.TagNumber(10)
+  void clearUserId() => $_clearField(10);
+
+  /// Stores the ID of the file that is used to render the frame
+  @$pb.TagNumber(11)
+  $fixnum.Int64 get vaultFileId => $_getI64(3);
+  @$pb.TagNumber(11)
+  set vaultFileId($fixnum.Int64 value) => $_setInt64(3, value);
+  @$pb.TagNumber(11)
+  $core.bool hasVaultFileId() => $_has(3);
+  @$pb.TagNumber(11)
+  void clearVaultFileId() => $_clearField(11);
+
+  /// The sequence number of the frame
+  @$pb.TagNumber(20)
+  $fixnum.Int64 get sequenceNumber => $_getI64(4);
+  @$pb.TagNumber(20)
+  set sequenceNumber($fixnum.Int64 value) => $_setInt64(4, value);
+  @$pb.TagNumber(20)
+  $core.bool hasSequenceNumber() => $_has(4);
+  @$pb.TagNumber(20)
+  void clearSequenceNumber() => $_clearField(20);
+
+  /// The time in seconds after which the frame needs to be refreshed
+  @$pb.TagNumber(21)
+  $fixnum.Int64 get autoRefreshInterval => $_getI64(5);
+  @$pb.TagNumber(21)
+  set autoRefreshInterval($fixnum.Int64 value) => $_setInt64(5, value);
+  @$pb.TagNumber(21)
+  $core.bool hasAutoRefreshInterval() => $_has(5);
+  @$pb.TagNumber(21)
+  void clearAutoRefreshInterval() => $_clearField(21);
+
+  /// The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+  @$pb.TagNumber(22)
+  $fixnum.Int64 get width => $_getI64(6);
+  @$pb.TagNumber(22)
+  set width($fixnum.Int64 value) => $_setInt64(6, value);
+  @$pb.TagNumber(22)
+  $core.bool hasWidth() => $_has(6);
+  @$pb.TagNumber(22)
+  void clearWidth() => $_clearField(22);
+
+  /// The height of the frame in vh (viewport height)
+  @$pb.TagNumber(23)
+  $fixnum.Int64 get height => $_getI64(7);
+  @$pb.TagNumber(23)
+  set height($fixnum.Int64 value) => $_setInt64(7, value);
+  @$pb.TagNumber(23)
+  $core.bool hasHeight() => $_has(7);
+  @$pb.TagNumber(23)
+  void clearHeight() => $_clearField(23);
+}
+
+///
+/// Describes the data that is returned after setting up a frame
+class EnclaveFrameSetup extends $pb.GeneratedMessage {
+  factory EnclaveFrameSetup({
+    $core.String? entityUuid,
+    $fixnum.Int64? expiresAt,
+    $core.String? enclaveName,
+    $core.String? appEndpoint,
+    $core.String? enclaveFrameUuid,
+    $fixnum.Int64? sequenceNumber,
+    $fixnum.Int64? autoRefreshInterval,
+    $fixnum.Int64? width,
+    $fixnum.Int64? height,
+  }) {
+    final result = create();
+    if (entityUuid != null) result.entityUuid = entityUuid;
+    if (expiresAt != null) result.expiresAt = expiresAt;
+    if (enclaveName != null) result.enclaveName = enclaveName;
+    if (appEndpoint != null) result.appEndpoint = appEndpoint;
+    if (enclaveFrameUuid != null) result.enclaveFrameUuid = enclaveFrameUuid;
+    if (sequenceNumber != null) result.sequenceNumber = sequenceNumber;
+    if (autoRefreshInterval != null)
+      result.autoRefreshInterval = autoRefreshInterval;
+    if (width != null) result.width = width;
+    if (height != null) result.height = height;
+    return result;
+  }
+
+  EnclaveFrameSetup._();
+
+  factory EnclaveFrameSetup.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveFrameSetup.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveFrameSetup',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'entityUuid')
+    ..a<$fixnum.Int64>(
+        10, _omitFieldNames ? '' : 'expiresAt', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(12, _omitFieldNames ? '' : 'enclaveName')
+    ..aOS(13, _omitFieldNames ? '' : 'appEndpoint')
+    ..aOS(20, _omitFieldNames ? '' : 'enclaveFrameUuid')
+    ..a<$fixnum.Int64>(
+        30, _omitFieldNames ? '' : 'sequenceNumber', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(
+        31, _omitFieldNames ? '' : 'autoRefreshInterval', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(32, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$fixnum.Int64>(33, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameSetup clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameSetup copyWith(void Function(EnclaveFrameSetup) updates) =>
+      super.copyWith((message) => updates(message as EnclaveFrameSetup))
+          as EnclaveFrameSetup;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameSetup create() => EnclaveFrameSetup._();
+  @$core.override
+  EnclaveFrameSetup createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameSetup getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveFrameSetup>(create);
+  static EnclaveFrameSetup? _defaultInstance;
+
+  /// Stores a globally unique entity UUID. This will be set at the organization level
+  @$pb.TagNumber(1)
+  $core.String get entityUuid => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set entityUuid($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEntityUuid() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEntityUuid() => $_clearField(1);
+
+  /// Stores the expiry timestamp of the frame
+  @$pb.TagNumber(10)
+  $fixnum.Int64 get expiresAt => $_getI64(1);
+  @$pb.TagNumber(10)
+  set expiresAt($fixnum.Int64 value) => $_setInt64(1, value);
+  @$pb.TagNumber(10)
+  $core.bool hasExpiresAt() => $_has(1);
+  @$pb.TagNumber(10)
+  void clearExpiresAt() => $_clearField(10);
+
+  /// Stores the unique identifier of the application
+  @$pb.TagNumber(12)
+  $core.String get enclaveName => $_getSZ(2);
+  @$pb.TagNumber(12)
+  set enclaveName($core.String value) => $_setString(2, value);
+  @$pb.TagNumber(12)
+  $core.bool hasEnclaveName() => $_has(2);
+  @$pb.TagNumber(12)
+  void clearEnclaveName() => $_clearField(12);
+
+  /// Stores the endpoint of the application execution
+  @$pb.TagNumber(13)
+  $core.String get appEndpoint => $_getSZ(3);
+  @$pb.TagNumber(13)
+  set appEndpoint($core.String value) => $_setString(3, value);
+  @$pb.TagNumber(13)
+  $core.bool hasAppEndpoint() => $_has(3);
+  @$pb.TagNumber(13)
+  void clearAppEndpoint() => $_clearField(13);
+
+  /// Stores the UUID of the enclave frame
+  @$pb.TagNumber(20)
+  $core.String get enclaveFrameUuid => $_getSZ(4);
+  @$pb.TagNumber(20)
+  set enclaveFrameUuid($core.String value) => $_setString(4, value);
+  @$pb.TagNumber(20)
+  $core.bool hasEnclaveFrameUuid() => $_has(4);
+  @$pb.TagNumber(20)
+  void clearEnclaveFrameUuid() => $_clearField(20);
+
+  /// The sequence number of the frame
+  @$pb.TagNumber(30)
+  $fixnum.Int64 get sequenceNumber => $_getI64(5);
+  @$pb.TagNumber(30)
+  set sequenceNumber($fixnum.Int64 value) => $_setInt64(5, value);
+  @$pb.TagNumber(30)
+  $core.bool hasSequenceNumber() => $_has(5);
+  @$pb.TagNumber(30)
+  void clearSequenceNumber() => $_clearField(30);
+
+  /// The time in seconds after which the frame needs to be refreshed
+  @$pb.TagNumber(31)
+  $fixnum.Int64 get autoRefreshInterval => $_getI64(6);
+  @$pb.TagNumber(31)
+  set autoRefreshInterval($fixnum.Int64 value) => $_setInt64(6, value);
+  @$pb.TagNumber(31)
+  $core.bool hasAutoRefreshInterval() => $_has(6);
+  @$pb.TagNumber(31)
+  void clearAutoRefreshInterval() => $_clearField(31);
+
+  /// The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+  @$pb.TagNumber(32)
+  $fixnum.Int64 get width => $_getI64(7);
+  @$pb.TagNumber(32)
+  set width($fixnum.Int64 value) => $_setInt64(7, value);
+  @$pb.TagNumber(32)
+  $core.bool hasWidth() => $_has(7);
+  @$pb.TagNumber(32)
+  void clearWidth() => $_clearField(32);
+
+  /// The height of the frame in vh (viewport height)
+  @$pb.TagNumber(33)
+  $fixnum.Int64 get height => $_getI64(8);
+  @$pb.TagNumber(33)
+  set height($fixnum.Int64 value) => $_setInt64(8, value);
+  @$pb.TagNumber(33)
+  $core.bool hasHeight() => $_has(8);
+  @$pb.TagNumber(33)
+  void clearHeight() => $_clearField(33);
+}
+
+///
+/// Describes the list of enclave frames that have been setup
+class EnclaveFrameSetupList extends $pb.GeneratedMessage {
+  factory EnclaveFrameSetupList({
+    $core.Iterable<EnclaveFrameSetup>? list,
+  }) {
+    final result = create();
+    if (list != null) result.list.addAll(list);
+    return result;
+  }
+
+  EnclaveFrameSetupList._();
+
+  factory EnclaveFrameSetupList.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnclaveFrameSetupList.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnclaveFrameSetupList',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'Scailo'),
+      createEmptyInstance: create)
+    ..pPM<EnclaveFrameSetup>(1, _omitFieldNames ? '' : 'list',
+        subBuilder: EnclaveFrameSetup.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameSetupList clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EnclaveFrameSetupList copyWith(
+          void Function(EnclaveFrameSetupList) updates) =>
+      super.copyWith((message) => updates(message as EnclaveFrameSetupList))
+          as EnclaveFrameSetupList;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameSetupList create() => EnclaveFrameSetupList._();
+  @$core.override
+  EnclaveFrameSetupList createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EnclaveFrameSetupList getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnclaveFrameSetupList>(create);
+  static EnclaveFrameSetupList? _defaultInstance;
+
+  /// List of setup frames
+  @$pb.TagNumber(1)
+  $pb.PbList<EnclaveFrameSetup> get list => $_getList(0);
+}
+
 class VaultSearchReq extends $pb.GeneratedMessage {
   factory VaultSearchReq({
     $0.BOOL_FILTER? isActive,

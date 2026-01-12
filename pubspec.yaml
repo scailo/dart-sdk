@@ -1,6 +1,6 @@
 name: scailo_sdk
 description: "Official Dart client for Scailo. Seamlessly integrate with Scailo's API-first ERP to automate workflows, manage resources, and build custom business solutions in Dart."
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/scailo/dart-sdk
 homepage: https://scailo.com
 
@@ -25,6 +25,9 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+  shelf: any
+  shelf_router: any
+  shelf_static: any
 flutter:
 
   # To add assets to your package, add an assets section, like this:

@@ -595,6 +595,54 @@ class VaultServiceClient extends $grpc.Client {
     return $createUnaryCall(_$filterEnclaveDomains, request, options: options);
   }
 
+  /// Adds an enclave as a dashboard frame. The file needs to be an enclave. Returns an error otherwise
+  $grpc.ResponseFuture<$2.EnclaveFrame> addEnclaveFrame(
+    $2.EnclaveFrameAddRequest request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$addEnclaveFrame, request, options: options);
+  }
+
+  /// View the properties of a frame
+  $grpc.ResponseFuture<$2.EnclaveFrame> viewEnclaveFrame(
+    $1.IdentifierUUID request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$viewEnclaveFrame, request, options: options);
+  }
+
+  /// Update the properties of a frame
+  $grpc.ResponseFuture<$2.EnclaveFrame> updateEnclaveFrame(
+    $2.EnclaveFrameUpdateRequest request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$updateEnclaveFrame, request, options: options);
+  }
+
+  /// Delete the dashboard frame
+  $grpc.ResponseFuture<$1.IdentifierResponse> deleteEnclaveFrame(
+    $1.IdentifierUUID request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$deleteEnclaveFrame, request, options: options);
+  }
+
+  /// Returns the endpoint that could be used to render a frame
+  $grpc.ResponseFuture<$2.EnclaveFrameSetup> setupEnclaveFrame(
+    $1.IdentifierUUID request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$setupEnclaveFrame, request, options: options);
+  }
+
+  /// Returns all the endpoints that could be used to render frames for the identified user. This can be primary used to render all the frames on a user's dashboard, for example.
+  $grpc.ResponseFuture<$2.EnclaveFrameSetupList> setupAllEnclaveFrames(
+    $1.Empty request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$setupAllEnclaveFrames, request, options: options);
+  }
+
   // method descriptors
 
   static final _$initiateFile = $grpc.ClientMethod<
@@ -933,6 +981,36 @@ class VaultServiceClient extends $grpc.Client {
           '/Scailo.VaultService/FilterEnclaveDomains',
           ($2.EnclaveDomainsFilterReq value) => value.writeToBuffer(),
           $2.EnclaveDomainsList.fromBuffer);
+  static final _$addEnclaveFrame =
+      $grpc.ClientMethod<$2.EnclaveFrameAddRequest, $2.EnclaveFrame>(
+          '/Scailo.VaultService/AddEnclaveFrame',
+          ($2.EnclaveFrameAddRequest value) => value.writeToBuffer(),
+          $2.EnclaveFrame.fromBuffer);
+  static final _$viewEnclaveFrame =
+      $grpc.ClientMethod<$1.IdentifierUUID, $2.EnclaveFrame>(
+          '/Scailo.VaultService/ViewEnclaveFrame',
+          ($1.IdentifierUUID value) => value.writeToBuffer(),
+          $2.EnclaveFrame.fromBuffer);
+  static final _$updateEnclaveFrame =
+      $grpc.ClientMethod<$2.EnclaveFrameUpdateRequest, $2.EnclaveFrame>(
+          '/Scailo.VaultService/UpdateEnclaveFrame',
+          ($2.EnclaveFrameUpdateRequest value) => value.writeToBuffer(),
+          $2.EnclaveFrame.fromBuffer);
+  static final _$deleteEnclaveFrame =
+      $grpc.ClientMethod<$1.IdentifierUUID, $1.IdentifierResponse>(
+          '/Scailo.VaultService/DeleteEnclaveFrame',
+          ($1.IdentifierUUID value) => value.writeToBuffer(),
+          $1.IdentifierResponse.fromBuffer);
+  static final _$setupEnclaveFrame =
+      $grpc.ClientMethod<$1.IdentifierUUID, $2.EnclaveFrameSetup>(
+          '/Scailo.VaultService/SetupEnclaveFrame',
+          ($1.IdentifierUUID value) => value.writeToBuffer(),
+          $2.EnclaveFrameSetup.fromBuffer);
+  static final _$setupAllEnclaveFrames =
+      $grpc.ClientMethod<$1.Empty, $2.EnclaveFrameSetupList>(
+          '/Scailo.VaultService/SetupAllEnclaveFrames',
+          ($1.Empty value) => value.writeToBuffer(),
+          $2.EnclaveFrameSetupList.fromBuffer);
 }
 
 @$pb.GrpcServiceName('Scailo.VaultService')
@@ -1464,6 +1542,51 @@ abstract class VaultServiceBase extends $grpc.Service {
             ($core.List<$core.int> value) =>
                 $2.EnclaveDomainsFilterReq.fromBuffer(value),
             ($2.EnclaveDomainsList value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$2.EnclaveFrameAddRequest, $2.EnclaveFrame>(
+        'AddEnclaveFrame',
+        addEnclaveFrame_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) =>
+            $2.EnclaveFrameAddRequest.fromBuffer(value),
+        ($2.EnclaveFrame value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$1.IdentifierUUID, $2.EnclaveFrame>(
+        'ViewEnclaveFrame',
+        viewEnclaveFrame_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $1.IdentifierUUID.fromBuffer(value),
+        ($2.EnclaveFrame value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$2.EnclaveFrameUpdateRequest, $2.EnclaveFrame>(
+            'UpdateEnclaveFrame',
+            updateEnclaveFrame_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $2.EnclaveFrameUpdateRequest.fromBuffer(value),
+            ($2.EnclaveFrame value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$1.IdentifierUUID, $1.IdentifierResponse>(
+        'DeleteEnclaveFrame',
+        deleteEnclaveFrame_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $1.IdentifierUUID.fromBuffer(value),
+        ($1.IdentifierResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$1.IdentifierUUID, $2.EnclaveFrameSetup>(
+        'SetupEnclaveFrame',
+        setupEnclaveFrame_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $1.IdentifierUUID.fromBuffer(value),
+        ($2.EnclaveFrameSetup value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$1.Empty, $2.EnclaveFrameSetupList>(
+        'SetupAllEnclaveFrames',
+        setupAllEnclaveFrames_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $1.Empty.fromBuffer(value),
+        ($2.EnclaveFrameSetupList value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.VaultFileInitiateFileResponse> initiateFile_Pre(
@@ -2040,4 +2163,54 @@ abstract class VaultServiceBase extends $grpc.Service {
 
   $async.Future<$2.EnclaveDomainsList> filterEnclaveDomains(
       $grpc.ServiceCall call, $2.EnclaveDomainsFilterReq request);
+
+  $async.Future<$2.EnclaveFrame> addEnclaveFrame_Pre($grpc.ServiceCall $call,
+      $async.Future<$2.EnclaveFrameAddRequest> $request) async {
+    return addEnclaveFrame($call, await $request);
+  }
+
+  $async.Future<$2.EnclaveFrame> addEnclaveFrame(
+      $grpc.ServiceCall call, $2.EnclaveFrameAddRequest request);
+
+  $async.Future<$2.EnclaveFrame> viewEnclaveFrame_Pre($grpc.ServiceCall $call,
+      $async.Future<$1.IdentifierUUID> $request) async {
+    return viewEnclaveFrame($call, await $request);
+  }
+
+  $async.Future<$2.EnclaveFrame> viewEnclaveFrame(
+      $grpc.ServiceCall call, $1.IdentifierUUID request);
+
+  $async.Future<$2.EnclaveFrame> updateEnclaveFrame_Pre($grpc.ServiceCall $call,
+      $async.Future<$2.EnclaveFrameUpdateRequest> $request) async {
+    return updateEnclaveFrame($call, await $request);
+  }
+
+  $async.Future<$2.EnclaveFrame> updateEnclaveFrame(
+      $grpc.ServiceCall call, $2.EnclaveFrameUpdateRequest request);
+
+  $async.Future<$1.IdentifierResponse> deleteEnclaveFrame_Pre(
+      $grpc.ServiceCall $call,
+      $async.Future<$1.IdentifierUUID> $request) async {
+    return deleteEnclaveFrame($call, await $request);
+  }
+
+  $async.Future<$1.IdentifierResponse> deleteEnclaveFrame(
+      $grpc.ServiceCall call, $1.IdentifierUUID request);
+
+  $async.Future<$2.EnclaveFrameSetup> setupEnclaveFrame_Pre(
+      $grpc.ServiceCall $call,
+      $async.Future<$1.IdentifierUUID> $request) async {
+    return setupEnclaveFrame($call, await $request);
+  }
+
+  $async.Future<$2.EnclaveFrameSetup> setupEnclaveFrame(
+      $grpc.ServiceCall call, $1.IdentifierUUID request);
+
+  $async.Future<$2.EnclaveFrameSetupList> setupAllEnclaveFrames_Pre(
+      $grpc.ServiceCall $call, $async.Future<$1.Empty> $request) async {
+    return setupAllEnclaveFrames($call, await $request);
+  }
+
+  $async.Future<$2.EnclaveFrameSetupList> setupAllEnclaveFrames(
+      $grpc.ServiceCall call, $1.Empty request);
 }
