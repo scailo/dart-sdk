@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Added support for Enclave Environment variables right within the Enclave Manifest itself.
+
+## 0.0.4
+
+* Introduced support for Scailo Enclave Frames.
